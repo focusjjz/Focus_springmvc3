@@ -39,17 +39,17 @@ public class StudentController {
 
 	@RequestMapping("/save")
 	public String save(HttpServletRequest request, ModelMap modelMap) {
-		String user = request.getParameter("user");
-		String psw = request.getParameter("psw");
+		String uname = request.getParameter("uname");
+		String upsw = request.getParameter("upsw");
 		Student st = new Student();
-		st.setUname(user);
-		st.setUpsw(psw);
+		st.setUname(uname);
+		st.setUpsw(upsw);
 		try {
 			studentService.save(st);
-			modelMap.put("addstate", "æ·»åŠ æˆåŠŸ");
+			modelMap.put("addstate", "Ìí¼Ó³É¹¦£¡");
 		} catch (Exception e) {
 			log.error(e.getMessage());
-			modelMap.put("addstate", "æ·»åŠ å¤±è´¥");
+			modelMap.put("addstate", "Ìí¼ÓÊ§°Ü£¡");
 		}
 
 		return "student_add";

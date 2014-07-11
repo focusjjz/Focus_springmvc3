@@ -13,7 +13,7 @@ td{  border:1px solid #f00;  }
 </style>
 <script type="text/javascript">
 function add(){
-	window.location.href="<%=request.getContextPath() %>/student/add";
+	window.location.href="<%=request.getContextPath() %>/student_add.jsp";
 }
 
 function del(id){

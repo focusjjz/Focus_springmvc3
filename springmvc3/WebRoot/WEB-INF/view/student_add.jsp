@@ -16,8 +16,8 @@ function turnback(){
 <form method="post" action="<%=request.getContextPath() %>/student.do?method=save">
 <div><c:out value="${addstate}"></c:out></div>
 <table>
-	<tr><td>姓名</td><td><input id="user" name="user" type="text" /></td></tr>
-	<tr><td>密码</td><td><input id="psw" name="psw"  type="text" /></td></tr>
+	<tr><td>姓名</td><td><input id="uname" name="uname" type="text" /></td></tr>
+	<tr><td>密码</td><td><input id="upsw" name="upsw"  type="text" /></td></tr>
 	<tr><td colSpan="2" align="center"><input type="submit" value="提交"/><input type="button" onclick="turnback()" value="返回" /> </td></tr>
 </table>
 
